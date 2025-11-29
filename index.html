@@ -43,7 +43,24 @@
         .container {
             text-align: center;
             z-index: 2;
-            padding: 40px 20px;
+            padding: 40px 20px 100px 20px;
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            width: 100%;
             max-width: 800px;
         }
 
@@ -51,32 +68,14 @@
             font-size: 1.3rem;
             line-height: 1.9;
             color: #ffffff;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             font-weight: 300;
             letter-spacing: 0.5px;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
         }
 
-        .contact {
-            font-size: 1.1rem;
-            color: #ffffff;
-            margin-bottom: 50px;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-        }
-
-        .contact a {
-            color: #ffffff;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-            transition: all 0.3s ease;
-        }
-
-        .contact a:hover {
-            border-bottom: 1px solid #ffffff;
-        }
-
         .link {
-            margin-top: 30px;
+            margin-bottom: 0;
         }
 
         .link a {
@@ -99,19 +98,43 @@
             letter-spacing: 4px;
         }
 
+        .contact {
+            font-size: 0.75rem;
+            color: #ffffff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .contact a:hover {
+            border-bottom: 1px solid #ffffff;
+        }
+
         @media (max-width: 768px) {
             .container {
-                padding: 30px 20px;
-                margin: 20px;
+                padding: 30px 20px 80px 20px;
             }
 
             .description {
                 font-size: 1rem;
-                line-height: 1.6;
+                line-height: 1.7;
+                margin-bottom: 35px;
             }
 
             .contact {
-                font-size: 0.9rem;
+                font-size: 0.65rem;
+                bottom: 25px;
             }
 
             .link a {
@@ -119,20 +142,34 @@
                 letter-spacing: 2px;
             }
         }
+
+        @media (max-height: 600px) {
+            .description {
+                font-size: 1rem;
+                margin-bottom: 40px;
+            }
+
+            .contact {
+                font-size: 0.7rem;
+                bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <p class="description">
-            A Bucharest-centric hub blending microhouse label and online streaming, showcasing electronic beats from Romania and beyond.
-        </p>
+        <div class="content-wrapper">
+            <p class="description">
+                A Bucharest-centric hub blending microhouse label and online streaming, showcasing electronic beats from Romania and beyond.
+            </p>
+            
+            <div class="link">
+                <a href="https://linktr.ee/storytellers.records" target="_blank">EXPLORE</a>
+            </div>
+        </div>
         
         <div class="contact">
             📧 <a href="mailto:hello@storytellersrecords.com">hello@storytellersrecords.com</a>
-        </div>
-        
-        <div class="link">
-            <a href="https://linktr.ee/storytellers.records" target="_blank">EXPLORE</a>
         </div>
     </div>
 </body>
