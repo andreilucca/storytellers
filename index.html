@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storytellers Records</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Overlay subtil pentru contrast */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.25);
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 2;
+            padding: 40px 20px;
+            max-width: 800px;
+        }
+
+        .description {
+            font-size: 1.3rem;
+            line-height: 1.9;
+            color: #ffffff;
+            margin-bottom: 50px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .contact {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 50px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .contact a:hover {
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .link {
+            margin-top: 30px;
+        }
+
+        .link a {
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0;
+            border: none;
+            font-size: 1.4rem;
+            letter-spacing: 3px;
+            font-weight: 300;
+            transition: all 0.3s ease;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 5px;
+        }
+
+        .link a:hover {
+            border-bottom: 2px solid #ffffff;
+            letter-spacing: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+
+            .description {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .contact {
+                font-size: 0.9rem;
+            }
+
+            .link a {
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="description">
+            A Bucharest-centric hub blending microhouse label and online streaming, showcasing electronic beats from Romania and beyond.
+        </p>
+        
+        <div class="contact">
+            📧 <a href="mailto:hello@storytellersrecords.com">hello@storytellersrecords.com</a>
+        </div>
+        
+        <div class="link">
+            <a href="https://linktr.ee/storytellers.records" target="_blank">EXPLORE</a>
+        </div>
+    </div>
+</body>
+</html>
